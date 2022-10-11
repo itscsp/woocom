@@ -1,0 +1,172 @@
+// Include custom variables default overrides here
+
+$primary: hsl(300, 68%, 30%);
+$primary-opacity-8: rgba(130, 23, 130, 0.519);
+$gray: #e6e6e6;
+
+
+$theme-color: (
+    "primary": $primary,
+    "primary-opacity-8":$primary-opacity-8,
+    "gray": $gray
+);
+
+//Create your own map
+$custom-color: (
+    "icon-background":hsla(300, 69%, 30%, 0.2)
+    
+);
+
+//Merge maps
+$theme-colors: map-merge($theme-color, $custom-color);
+
+$utilities: (
+    "rounded": (
+        property: border-radius,
+        class: rounded,
+        values: (
+            null: 1rem,
+            circle: 50% 
+        )
+    )
+);
+
+
+@import "./bootstrap/scss/bootstrap";
+
+// Then add additional custom code here
+
+
+
+/************ HEADER **************/
+
+.announcement-bar {
+    font-size: 0.8rem;
+    border-bottom: 1px solid var(--bs-gray);
+
+    &__list {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        display: inline-flex;
+        margin: 0px 10px;
+
+        li {
+            margin: 0px 10px;
+            display: flex;
+            align-items: center;
+            color: var(--bs-primary);
+
+            .bi {
+                background-color: var(--bs-icon-background);
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                min-width: 30px;
+                height: 30px;
+                margin-right: 6px;
+            }
+        }
+    }
+
+
+    @include media-breakpoint-down(lg) {
+        display: none;
+    }
+}
+
+.site-header {
+
+    &__logo {
+
+        .custom-logo-link {
+            text-align: star;
+
+            @include media-breakpoint-down(lg) {
+                text-align: center;
+                
+            }
+        }
+
+        img.custom-logo {
+            width: 65%;
+        }
+
+    }
+
+    .aws-container .aws-search-field {
+
+        border: 1px solid var(--bs-icon-background);
+        color: var(--bs-primary);
+        
+    }
+
+    .aws-container .aws-search-form .aws-form-btn {
+        background: var(--bs-icon-background);
+        border: 1px solid var(--bs-icon-background);
+    }
+
+    .aws-search-btn_icon svg{
+        color: var(--bs-primary);
+    }
+}
+
+/******** Main Menu *******/
+
+.main-navigation {
+    font-weight: 600;
+
+    .current_page_item {
+        background-color: hsl(300, 59%, 42%);;
+    }
+
+    a {
+        color: var(--bs-white);
+        text-transform: capitalize;
+        padding: 0.55rem 1.4rem;
+
+        &:hover{
+            background-color: hsl(300, 59%, 42%);
+        }
+    }
+
+    .menu-toggle{
+        background-color: $primary;
+        color: $white;
+        border: none;
+    }
+
+}
+
+/************ Front Page ************/
+
+
+/*********** Slider ****************/
+
+.carousel{
+    .carousel-control-prev, .carousel-control-next{
+        width: 9%;
+    }
+}
+
+
+/*********** CATEGORIES ************/
+
+.categories {
+    background-color: #f9f9f9;
+    
+    &__col {
+        height: 212px;
+
+        img {
+            object-fit: cover;
+            width: 100%;
+        }
+    }
+
+    @include media-breakpoint-up(md) {
+        &__col {
+            height: 336px;
+        }
+    }
+}
