@@ -12295,7 +12295,7 @@ fieldset:disabled .btn {
 
 .main-navigation a {
   color: var(--bs-white);
-  text-transform: capitalize;
+  text-transform: uppercase;
   padding: 0.55rem 1.4rem;
 }
 
@@ -12307,6 +12307,10 @@ fieldset:disabled .btn {
   background-color: #811881;
   color: #fff;
   border: none;
+}
+
+.main-navigation .sub-menu li {
+  background-color: #811881;
 }
 
 /************ Front Page ************/

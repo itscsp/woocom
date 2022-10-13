@@ -124,7 +124,7 @@ $utilities: (
 
     a {
         color: var(--bs-white);
-        text-transform: capitalize;
+        text-transform: uppercase;
         padding: 0.55rem 1.4rem;
 
         &:hover{
@@ -136,6 +136,12 @@ $utilities: (
         background-color: $primary;
         color: $white;
         border: none;
+    }
+
+    .sub-menu{
+        li{
+            background-color: $primary;
+        }
     }
 
 }
