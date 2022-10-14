@@ -280,7 +280,7 @@ function custom_footer_widget_three(){
 
  }
 
- add_action('widgets_init', 'custom_footer_widget_three');\
+ add_action('widgets_init', 'custom_footer_widget_three');
 
 
  /**
@@ -314,3 +314,5 @@ function custom_footer_widget_three(){
   }
 
   add_action('wp_enqueue_scripts', 'wp_enqueue_commerce_styles');
+
+

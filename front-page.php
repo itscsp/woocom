@@ -52,7 +52,7 @@ get_header();
     <!------------------ CAROUSEL ITEM ENDS --------------------->
 
     <!------------------ POPULAR PRODUCT --------------------->
-    <section class="container">
+    <section class="container popular_product">
         <h1 class="text-center pt-5">Popular Products</h1>
         <p class="text-center">We offer a number of high quality toys to help keep<br> your pets healthy and spoiled!</p>
         <div class="pt-5 pb-5">
@@ -115,7 +115,7 @@ get_header();
     <!------------------ CATEGORY PRODUCT --------------------->
 
     <!------------------ SPECIAL OFFERS --------------------->
-    <section class="container pt-5">
+    <section class="container pt-5 special_product">
         <h1 class="text-center pt-5">Special Products</h1>
         <p class="text-center">We offer a number of high quality toys to help keep<br> your pets healthy and spoiled!</p>
         <div class="pt-5 pb-5">

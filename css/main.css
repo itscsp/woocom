@@ -45,7 +45,7 @@
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-  --bs-body-font-family: var(--bs-font-sans-serif);
+  --bs-body-font-family: Poppins, sans-serif;
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
@@ -104,7 +104,8 @@ hr {
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   margin-top: 0;
   margin-bottom: 0.5rem;
-  font-weight: 500;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
   line-height: 1.2;
 }
 
@@ -6291,7 +6292,7 @@ fieldset:disabled .btn {
   display: block;
   padding: var(--bs-tooltip-arrow-height);
   margin: var(--bs-tooltip-margin);
-  font-family: var(--bs-font-sans-serif);
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -6408,7 +6409,7 @@ fieldset:disabled .btn {
   z-index: var(--bs-popover-zindex);
   display: block;
   max-width: var(--bs-popover-max-width);
-  font-family: var(--bs-font-sans-serif);
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -12284,6 +12285,10 @@ fieldset:disabled .btn {
   color: var(--bs-primary);
 }
 
+.site-header .bi-bag-heart-fill {
+  font-size: 26px;
+}
+
 /******** Main Menu *******/
 .main-navigation {
   font-weight: 600;
@@ -12356,5 +12361,32 @@ fieldset:disabled .btn {
 
 .site-footer .menu a:hover {
   text-decoration: underline;
+}
+
+/************ 404 **************/
+.not-found {
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+}
+
+@media (min-width: 768px) {
+  .coupon #coupon_code {
+    width: 200px;
+  }
+}
+
+.popular_product a.button.add_to_cart_button,
+.special_product a.button.add_to_cart_button,
+.products a.button.add_to_cart_button {
+  display: block;
+  text-align: center;
+}
+
+.popular_product .attachment-woocommerce_thumbnail,
+.special_product .attachment-woocommerce_thumbnail,
+.products .attachment-woocommerce_thumbnail {
+  border-radius: 20px;
+  overflow: hidden;
 }
 /*# sourceMappingURL=main.css.map */
